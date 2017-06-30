@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="33" started-at="2017-04-25T05:34:03Z" finished-at="2017-04-25T05:34:03Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="33" started-at="2017-04-25T05:34:03Z" finished-at="2017-04-25T05:34:03Z">
+      <class name="testLinkConver.testlink">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testLinkConver.testlink@25cc8345]" name="beforeClass" is-config="true" duration-ms="7" started-at="2017-04-25T13:34:03Z" finished-at="2017-04-25T13:34:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="testLinkconvert(java.util.Map)[pri:0, instance:testLinkConver.testlink@25cc8345]" name="testLinkconvert" duration-ms="12" started-at="2017-04-25T13:34:03Z" data-provider="testlink" finished-at="2017-04-25T13:34:03Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at tools.ExcelProvider4Test.hasNext(ExcelProvider4Test.java:62)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1224)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLinkconvert -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:testLinkConver.testlink@25cc8345]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-04-25T13:34:03Z" finished-at="2017-04-25T13:34:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testLinkConver.testlink -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
