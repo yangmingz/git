@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test">
+    <!-- 配置testng监听器 -->
+    <listeners>
+         <listener class-name="auto.Ui.sunmiPayDemo" />
+    </listeners>
+    <test name="version" preserve-order="true">
+        <classes>
+            <class name="sunmiPayDemo">
+                <methods>
+                    <include name="sunmi_setting_tests" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="appuimtest.sunmi_setting_test">
+        <methods>
+          <include name="sunmi_setting_tests" invocation-numbers="0"/>
+          <include name="BeforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- appuimtest.sunmi_setting_test -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
