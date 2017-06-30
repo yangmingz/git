@@ -1,10 +1,10 @@
-package yibuhuidiao;
+package callBackDemo;
 /** 
 * 这个是小王 
 * @author xiaanming 
 * 实现了一个回调接口CallBack，相当于----->背景一 
 */  
-public class Wang implements CallBack {  
+public class zhou implements CallBack {  
    /** 
     * 小李对象的引用 
     * 相当于----->背景二 
@@ -15,7 +15,7 @@ public class Wang implements CallBack {
     * 小王的构造方法，持有小李的引用 
     * @param li 
     */  
-   public Wang(Li li){  
+   public zhou(Li li){  
        this.li = li;  
    }  
      
@@ -32,7 +32,7 @@ public class Wang implements CallBack {
                 * 小王调用小李中的方法，在这里注册回调接口 
                 * 这就相当于A类调用B的方法C 
                 */  
-               li.executeMessage(Wang.this, question);   
+               li.executeMessage(zhou.this, question);   
            }  
        }).start();  
          
@@ -52,7 +52,7 @@ public class Wang implements CallBack {
        System.out.println("我要逛街去了"); 
        for (int i = 0; i < 30; i++) {
     	   try {
-			Thread.sleep(300);
+			Thread.sleep(100);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -66,7 +66,7 @@ public class Wang implements CallBack {
     */  
    @Override  
    public void solve(String result) {  
-       System.out.println("回调方法小李告诉小王的答案是--->" + result);  
+       System.out.println("回调方法小李告诉小周的答案是--->" + result);  
    }  
      
 }  

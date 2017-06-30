@@ -1,4 +1,4 @@
-package yibuhuidiao;
+package callBackDemo;
 /**
 * 这个就是小李啦 
 * @author xiaanming 
@@ -26,7 +26,7 @@ public class Li {
        /** 
         * 小李办完自己的事情之后想到了答案是2 
         */  
-       String result = "答案是2";  
+       String result =question+ "：答案是2";  
          
        /** 
         * 于是就打电话告诉小王，调用小王中的方法 

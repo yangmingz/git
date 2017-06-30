@@ -8,8 +8,8 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Arrays;
 
-import tools.ByteToInputStream;
-import tools.byteUnilts;
+import byteUnits.ByteToInputStream;
+import byteUnits.byteUnilts;
 
 public class socketService {
 	 final String out="004F60000000026031000110010830003800010AC0001000010710570103020800010000313233343536373839303132303030303030303930353836393130323635333131303030300011000000060020";
@@ -26,7 +26,7 @@ public class socketService {
         try{
             ServerSocket server=null;
             try{
-                server=new ServerSocket(5209);
+                server=new ServerSocket(8000);
                 //b)指定绑定的端口，并监听此端口。
                 System.out.println("服务器启动成功......");
                 //创建一个ServerSocket在端口5209监听客户请求

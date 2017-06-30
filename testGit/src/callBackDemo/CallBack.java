@@ -1,4 +1,4 @@
-package yibuhuidiao;
+package callBackDemo;
 /** 
  * 这是一个回调接口 
  * @author xiaanming 
