@@ -1,0 +1,81 @@
+13:12:13.581 ERROR com.dukascopy.api.impl.connect.AuthorizationClient - Auth failed
+HttpServerResponse [response=Auth failed, responseCode=801, headerFields={null=[HTTP/1.1 801], StatusCode=[801], Content-Language=[en], Expires=[Thu, 01 Jan 1970 00:00:00 GMT], Last-Modified=[Fri, 24 Feb 2017 05:12:13 GMT], Set-Cookie=[__cfduid=d9682bb89082fd8ee6d82ee6adc881f9a1487913133; expires=Sat, 24-Feb-18 05:12:13 GMT; path=/; domain=.dukascopy.com; HttpOnly], Access-Control-Allow-Credentials=[true], Connection=[keep-alive], Server=[cloudflare-nginx], Pragma=[no-cache], Cache-Control=[no-cache, must-revalidate, no-store, max-age=0], Transfer-Encoding=[chunked], Date=[Fri, 24 Feb 2017 05:12:15 GMT], StatusMessage=[Auth failed], CF-RAY=[33606bdb697611dd-SJC], Content-Type=[text/html;charset=UTF-8]}]
+	at com.dukascopy.auth.client.http.AbstractHttpSRPClientProtocol.makeServerRequest(AbstractHttpSRPClientProtocol.java:58)
+	at com.dukascopy.auth.client.http.AbstractHttpSRPClientProtocol.makeServerRequest(AbstractHttpSRPClientProtocol.java:20)
+	at com.dukascopy.auth.client.AbstractSRPClientProtocol.performStep1(AbstractSRPClientProtocol.java:157)
+	at com.dukascopy.auth.client.SRPAuthClient.step1(SRPAuthClient.java:210)
+	at com.dukascopy.auth.client.SRPAuthClient.authenticate(SRPAuthClient.java:59)
+	at com.dukascopy.api.impl.connect.AuthorizationClient.getAPIsAndTicketUsingLogin_SRP6(AuthorizationClient.java:798)
+	at com.dukascopy.api.impl.connect.AuthorizationClient.getAPIsAndTicketUsingLogin_SRP6(AuthorizationClient.java:639)
+	at com.dukascopy.api.impl.connect.TesterClientImpl.authenticateAPI(TesterClientImpl.java:501)
+	at com.dukascopy.api.impl.connect.TesterClientImpl.connect(TesterClientImpl.java:277)
+	at com.dukascopy.api.impl.connect.TesterClientImpl.connect(TesterClientImpl.java:268)
+	at singlejartest.TesterMainGUIMode.startStrategy(TesterMainGUIMode.java:156)
+	at singlejartest.TesterMainGUIMode$3$1.run(TesterMainGUIMode.java:252)
+	at java.lang.Thread.run(Thread.java:745)
+13:12:13.596 ERROR singlejartest.TesterMainGUIMode - Incorrect username or password
+com.dukascopy.api.system.JFAuthenticationException: Incorrect username or password
+	at com.dukascopy.api.impl.connect.TesterClientImpl.authenticateAPI(TesterClientImpl.java:546)
+	at com.dukascopy.api.impl.connect.TesterClientImpl.connect(TesterClientImpl.java:277)
+	at com.dukascopy.api.impl.connect.TesterClientImpl.connect(TesterClientImpl.java:268)
+	at singlejartest.TesterMainGUIMode.startStrategy(TesterMainGUIMode.java:156)
+	at singlejartest.TesterMainGUIMode$3$1.run(TesterMainGUIMode.java:252)
+	at java.lang.Thread.run(Thread.java:745)
+13:12:41.645 ERROR com.dukascopy.api.impl.connect.AuthorizationClient - Auth failed
+HttpServerResponse [response=Auth failed, responseCode=801, headerFields={null=[HTTP/1.1 801], StatusCode=[801], Content-Language=[en], Expires=[Thu, 01 Jan 1970 00:00:00 GMT], Last-Modified=[Fri, 24 Feb 2017 05:12:42 GMT], Set-Cookie=[__cfduid=d152210e71e5b7a167e17fd207dff21201487913161; expires=Sat, 24-Feb-18 05:12:41 GMT; path=/; domain=.dukascopy.com; HttpOnly], Access-Control-Allow-Credentials=[true], Connection=[keep-alive], Server=[cloudflare-nginx], Pragma=[no-cache], Cache-Control=[no-cache, must-revalidate, no-store, max-age=0], Transfer-Encoding=[chunked], Date=[Fri, 24 Feb 2017 05:12:43 GMT], StatusMessage=[Auth failed], CF-RAY=[33606c8e5ab7514c-SJC], Content-Type=[text/html;charset=UTF-8]}]
+	at com.dukascopy.auth.client.http.AbstractHttpSRPClientProtocol.makeServerRequest(AbstractHttpSRPClientProtocol.java:58)
+	at com.dukascopy.auth.client.http.AbstractHttpSRPClientProtocol.makeServerRequest(AbstractHttpSRPClientProtocol.java:20)
+	at com.dukascopy.auth.client.AbstractSRPClientProtocol.performStep1(AbstractSRPClientProtocol.java:157)
+	at com.dukascopy.auth.client.SRPAuthClient.step1(SRPAuthClient.java:210)
+	at com.dukascopy.auth.client.SRPAuthClient.authenticate(SRPAuthClient.java:59)
+	at com.dukascopy.api.impl.connect.AuthorizationClient.getAPIsAndTicketUsingLogin_SRP6(AuthorizationClient.java:798)
+	at com.dukascopy.api.impl.connect.AuthorizationClient.getAPIsAndTicketUsingLogin_SRP6(AuthorizationClient.java:639)
+	at com.dukascopy.api.impl.connect.TesterClientImpl.authenticateAPI(TesterClientImpl.java:501)
+	at com.dukascopy.api.impl.connect.TesterClientImpl.connect(TesterClientImpl.java:277)
+	at com.dukascopy.api.impl.connect.TesterClientImpl.connect(TesterClientImpl.java:268)
+	at singlejartest.TesterMainGUIMode.startStrategy(TesterMainGUIMode.java:156)
+	at singlejartest.TesterMainGUIMode$3$1.run(TesterMainGUIMode.java:252)
+	at java.lang.Thread.run(Thread.java:745)
+13:12:41.699 ERROR singlejartest.TesterMainGUIMode - Incorrect username or password
+com.dukascopy.api.system.JFAuthenticationException: Incorrect username or password
+	at com.dukascopy.api.impl.connect.TesterClientImpl.authenticateAPI(TesterClientImpl.java:546)
+	at com.dukascopy.api.impl.connect.TesterClientImpl.connect(TesterClientImpl.java:277)
+	at com.dukascopy.api.impl.connect.TesterClientImpl.connect(TesterClientImpl.java:268)
+	at singlejartest.TesterMainGUIMode.startStrategy(TesterMainGUIMode.java:156)
+	at singlejartest.TesterMainGUIMode$3$1.run(TesterMainGUIMode.java:252)
+	at java.lang.Thread.run(Thread.java:745)
+13:17:22.862 ERROR com.dukascopy.api.impl.connect.AuthorizationClient - Auth failed
+HttpServerResponse [response=Auth failed, responseCode=801, headerFields={null=[HTTP/1.1 801], StatusCode=[801], Content-Language=[en], Expires=[Thu, 01 Jan 1970 00:00:00 GMT], Last-Modified=[Fri, 24 Feb 2017 05:17:23 GMT], Set-Cookie=[__cfduid=d2db70ca91050a7ac835212d87b602c0b1487913442; expires=Sat, 24-Feb-18 05:17:22 GMT; path=/; domain=.dukascopy.com; HttpOnly], Access-Control-Allow-Credentials=[true], Connection=[keep-alive], Server=[cloudflare-nginx], Pragma=[no-cache], Cache-Control=[no-cache, must-revalidate, no-store, max-age=0], Transfer-Encoding=[chunked], Date=[Fri, 24 Feb 2017 05:17:24 GMT], StatusMessage=[Auth failed], CF-RAY=[33607368fd0127fe-SJC], Content-Type=[text/html;charset=UTF-8]}]
+	at com.dukascopy.auth.client.http.AbstractHttpSRPClientProtocol.makeServerRequest(AbstractHttpSRPClientProtocol.java:58)
+	at com.dukascopy.auth.client.http.AbstractHttpSRPClientProtocol.makeServerRequest(AbstractHttpSRPClientProtocol.java:20)
+	at com.dukascopy.auth.client.AbstractSRPClientProtocol.performStep1(AbstractSRPClientProtocol.java:157)
+	at com.dukascopy.auth.client.SRPAuthClient.step1(SRPAuthClient.java:210)
+	at com.dukascopy.auth.client.SRPAuthClient.authenticate(SRPAuthClient.java:59)
+	at com.dukascopy.api.impl.connect.AuthorizationClient.getAPIsAndTicketUsingLogin_SRP6(AuthorizationClient.java:798)
+	at com.dukascopy.api.impl.connect.AuthorizationClient.getAPIsAndTicketUsingLogin_SRP6(AuthorizationClient.java:639)
+	at com.dukascopy.api.impl.connect.DCClientImpl.authenticate(DCClientImpl.java:554)
+	at com.dukascopy.api.impl.connect.DCClientImpl.connect(DCClientImpl.java:326)
+	at com.dukascopy.api.impl.connect.DCClientImpl.connect(DCClientImpl.java:316)
+	at singlejartest.Main.main(Main.java:115)
+13:19:19.912 WARN  com.dukascopy.charts.data.datacache.CacheManager - Cannot delete lock file [C:\Users\GankLi\AppData\Local\JForex\.cache\lock0.lck]
+13:19:20.350 WARN  com.dukascopy.api.impl.connect.WLabelData - White Label Image is not received
+13:19:23.868 ERROR com.dukascopy.dds2.greed.market.LiveCurrencyMarketProcessor - Cannot create the LiveCurrencyMarketProcessor, the properties is null.
+13:19:30.358 ERROR singlejartest.Main - Failed to connect Dukascopy servers
+13:20:52.218 WARN  com.dukascopy.api.impl.connect.WLabelData - White Label Image is not received
+13:20:54.110 ERROR com.dukascopy.dds2.greed.market.LiveCurrencyMarketProcessor - Cannot create the LiveCurrencyMarketProcessor, the properties is null.
+13:47:18.054 WARN  com.dukascopy.api.impl.connect.WLabelData - White Label Image is not received
+13:47:19.939 ERROR com.dukascopy.dds2.greed.market.LiveCurrencyMarketProcessor - Cannot create the LiveCurrencyMarketProcessor, the properties is null.
+16:43:12.431 ERROR com.dukascopy.dds4.transport.client.ClientConnector - Exception caught
+java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.mina.transport.socket.nio.SocketIoProcessor.read(SocketIoProcessor.java:218)
+	at org.apache.mina.transport.socket.nio.SocketIoProcessor.process(SocketIoProcessor.java:198)
+	at org.apache.mina.transport.socket.nio.SocketIoProcessor.access$400(SocketIoProcessor.java:45)
+	at org.apache.mina.transport.socket.nio.SocketIoProcessor$Worker.run(SocketIoProcessor.java:486)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:51)
+	at java.lang.Thread.run(Thread.java:745)
+16:43:15.819 ERROR com.dukascopy.dds2.greed.market.LiveCurrencyMarketProcessor - Cannot create the LiveCurrencyMarketProcessor, the properties is null.
